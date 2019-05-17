@@ -1,0 +1,48 @@
+$color-1: #FE4646;
+$container-width: 270px;
+$red-width: $container-width;
+
+.gallery {
+
+    .container {
+        flex-direction: column;
+        width: $container-width;
+        height: 360px;
+
+        .header-mobile {
+            display: block;
+            width: $container-width;
+            margin: 0 auto;
+            padding-top: 37px;
+            padding-bottom: 1px;
+            text-align: center;
+
+            h3 {
+                margin-bottom: 37px;
+                color: $color-5;
+                font-size: 23px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+
+        .special-pic {
+            width: $container-width;
+            height: 190px;
+            margin: 0 auto 23px auto;
+            margin-bottom: 26px;
+        }
+
+        .gallery-container {
+            height: 0;
+
+            h3 {
+                display: none;
+            }
+
+            .pic-grid {
+                display: none;
+            }
+        }
+    }
+}

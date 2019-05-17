@@ -1,0 +1,134 @@
+yarn run v1.16.0
+$ yarn lint:css & yarn lint:html
+$ stylelint "./source/styles/**/*.scss" --syntax scss
+$ htmllint "./source/*.html"
+
+[htmllint] found 0 errors out of 1 files
+Done in 0.92s.
+
+source/styles/components/overview/base.scss
+ 14:18  ✖  Unexpected missing generic font family                                 font-family-no-missing-generic-family-keyword
+ 24:5   ✖  Expected "width" to come before "margin"                               order/properties-order                       
+ 25:5   ✖  Expected "position" to come before "width"                             order/properties-order                       
+ 30:4   ✖  Unexpected whitespace at end of line                                   no-eol-whitespace                            
+ 34:9   ✖  Expected "height" to come before "background-color"                    order/properties-order                       
+ 64:13  ✖  Expected "font-family" to come before "text-decoration"                order/properties-order                       
+ 64:26  ✖  Unexpected missing generic font family                                 font-family-no-missing-generic-family-keyword
+ 66:13  ✖  Expected "font-size" to come before "font-weight"                      order/properties-order                       
+ 67:13  ✖  Expected "margin-left" to come before "font-size"                      order/properties-order                       
+ 68:13  ✖  Expected "margin-bottom" to come before "margin-left"                  order/properties-order                       
+ 70:28  ✖  Unexpected leading zero                                                number-leading-zero                          
+ 71:13  ✖  Expected "letter-spacing" to come before "word-spacing"                order/properties-order                       
+ 71:29  ✖  Unexpected leading zero                                                number-leading-zero                          
+ 81:13  ✖  Expected "grid-template-columns" to come before "grid-template-rows"   order/properties-order                       
+ 82:13  ✖  Expected "grid-row-gap" to come before "grid-template-columns"         order/properties-order                       
+ 83:13  ✖  Expected "grid-column-gap" to come before "grid-row-gap"               order/properties-order                       
+ 87:30  ✖  Unexpected missing generic font family                                 font-family-no-missing-generic-family-keyword
+ 89:17  ✖  Expected "font-size" to come before "font-weight"                      order/properties-order                       
+
+source/styles/components/overview/desktop.scss
+ 6:25  ✖  Unexpected missing end-of-source newline   no-missing-end-of-source-newline
+
+source/styles/components/overview/mobile.scss
+  12:12  ✖  Unexpected whitespace at end of line                                                          no-eol-whitespace                
+  15:17  ✖  Expected "width" to come before "background-color"                                            order/properties-order           
+  22:25  ✖  Expected "padding" to come before "font-size"                                                 order/properties-order           
+  23:25  ✖  Expected "margin-left" to come before "padding"                                               order/properties-order           
+  44:21  ✖  Expected "padding-right" to come before "font-size"                                           order/properties-order           
+  52:25  ✖  Expected "margin-top" to come before "font-size"                                              order/properties-order           
+  58:31  ✖  Unexpected !important                                                                         declaration-no-important         
+  68:17  ✖  Expected "top" to come before "right"                                                         order/properties-order           
+  74:9   ✖  Expected empty line before rule                                                               rule-empty-line-before           
+  74:18  ✖  Expected single space before "{"                                                              block-opening-brace-space-before 
+  76:21  ✖  Expected single space before "{"                                                              block-opening-brace-space-before 
+  88:2   ✖  Expected newline after "}"                                                                    block-closing-brace-newline-after
+  88:2   ✖  Unexpected whitespace at end of line                                                          no-eol-whitespace                
+  93:5   ✖  Expected selector ".overview .container" to come before selector ".header .row1 .container"   no-descending-specificity        
+  93:5   ✖  Expected selector ".overview .container" to come before selector ".header .row2 .container"   no-descending-specificity        
+  98:13  ✖  Expected "padding-top" to come before "padding-left"                                          order/properties-order           
+ 104:17  ✖  Expected "margin-left" to come before "font-size"                                             order/properties-order           
+ 110:17  ✖  Expected "margin-bottom" to come before "letter-spacing"                                      order/properties-order           
+
+source/styles/components/overview/tablet.scss
+  9:8   ✖  Unexpected whitespace at end of line                       no-eol-whitespace               
+ 12:13  ✖  Expected "width" to come before "background-color"         order/properties-order          
+ 41:27  ✖  Unexpected !important                                      declaration-no-important        
+ 57:17  ✖  Expected "grid-column-gap" to come before "grid-row-gap"   order/properties-order          
+ 69:1   ✖  Unexpected missing end-of-source newline                   no-missing-end-of-source-newline
+
+source/styles/components/header/base.scss
+  34:9   ✖  Expected "overflow" to come before "color"                                                                               order/properties-order              
+  56:21  ✖  Expected "border" to come before "font-size"                                                                             order/properties-order              
+  57:21  ✖  Expected "padding" to come before "border"                                                                               order/properties-order              
+  59:16  ✖  Unexpected whitespace at end of line                                                                                     no-eol-whitespace                   
+  65:37  ✖  Unexpected leading zero                                                                                                  number-leading-zero                 
+  66:21  ✖  Expected "font-size" to come before "letter-spacing"                                                                     order/properties-order              
+  74:17  ✖  Expected "width" to come before "font-size"                                                                              order/properties-order              
+  75:33  ✖  Unexpected leading zero                                                                                                  number-leading-zero                 
+  76:17  ✖  Expected "padding" to come before "letter-spacing"                                                                       order/properties-order              
+  77:17  ✖  Expected "margin-left" to come before "padding"                                                                          order/properties-order              
+  82:32  ✖  Unexpected leading zero                                                                                                  number-leading-zero                 
+  83:17  ✖  Expected "margin-top" to come before "border-bottom"                                                                     order/properties-order              
+  85:17  ✖  Expected "margin-bottom" to come before "margin-left"                                                                    order/properties-order              
+  87:34  ✖  Unexpected leading zero                                                                                                  number-leading-zero                 
+  97:21  ✖  Expected "font-size" to come before "letter-spacing"                                                                     order/properties-order              
+ 100:12  ✖  Unexpected whitespace at end of line                                                                                     no-eol-whitespace                   
+ 104:17  ✖  Expected "margin-left" to come before "font-weight"                                                                      order/properties-order              
+ 106:17  ✖  Expected "padding-right" to come before "padding-bottom"                                                                 order/properties-order              
+ 108:34  ✖  Unexpected leading zero                                                                                                  number-leading-zero                 
+ 110:17  ✖  Expected "border-bottom" to come before "line-height"                                                                    order/properties-order              
+ 110:32  ✖  Unexpected leading zero                                                                                                  number-leading-zero                 
+ 122:21  ✖  Expected "width" to come before "margin-right"                                                                           order/properties-order              
+ 124:21  ✖  Expected "content" to come before "height"                                                                               order/properties-order              
+ 140:17  ✖  Expected "position" to come before "justify-content"                                                                     order/properties-order              
+ 146:21  ✖  Expected "display" to come before "width"                                                                                order/properties-order              
+ 150:25  ✖  Expected "flex-grow" to come before "border"                                                                             order/properties-order              
+ 159:82  ✖  Expected a trailing semicolon                                                                                            declaration-block-trailing-semicolon
+ 167:84  ✖  Expected a trailing semicolon                                                                                            declaration-block-trailing-semicolon
+ 175:85  ✖  Expected a trailing semicolon                                                                                            declaration-block-trailing-semicolon
+ 185:13  ✖  Expected "width" to come before "height"                                                                                 order/properties-order              
+ 191:13  ✖  Expected selector ".header .row1 .menu a" to come before selector ".header .row1 .red .icons .linkgrid a"                no-descending-specificity           
+ 198:4   ✖  Unexpected whitespace at end of line                                                                                     no-eol-whitespace                   
+ 202:9   ✖  Expected "overflow" to come before "background-color"                                                                    order/properties-order              
+ 212:17  ✖  Expected "width" to come before "height"                                                                                 order/properties-order              
+ 213:17  ✖  Expected "left" to come before "width"                                                                                   order/properties-order              
+ 223:17  ✖  Expected "display" to come before "position"                                                                             order/properties-order              
+ 226:17  ✖  Expected "z-index" to come before "align-items"                                                                          order/properties-order              
+ 228:17  ✖  Expected selector ".header .row2 .container .arrows a" to come before selector ".header .row1 .red .icons .linkgrid a"   no-descending-specificity           
+ 232:21  ✖  Expected "border" to come before "text-decoration"                                                                       order/properties-order              
+ 238:25  ✖  Expected "height" to come before "background-position"                                                                   order/properties-order              
+ 239:25  ✖  Expected "width" to come before "height"                                                                                 order/properties-order              
+ 250:25  ✖  Expected "height" to come before "background-position"                                                                   order/properties-order              
+ 251:25  ✖  Expected "width" to come before "height"                                                                                 order/properties-order              
+ 266:4   ✖  Unexpected whitespace at end of line                                                                                     no-eol-whitespace                   
+ 267:5   ✖  Expected selector ".overview .container" to come before selector ".header .row1 .container"                              no-descending-specificity           
+ 267:5   ✖  Expected selector ".overview .container" to come before selector ".header .row2 .container"                              no-descending-specificity           
+ 270:9   ✖  Expected "height" to come before "background-color"                                                                      order/properties-order              
+ 300:13  ✖  Expected "font-family" to come before "text-decoration"                                                                  order/properties-order              
+ 302:13  ✖  Expected "font-size" to come before "font-weight"                                                                        order/properties-order              
+ 303:13  ✖  Expected "margin-left" to come before "font-size"                                                                        order/properties-order              
+ 304:13  ✖  Expected "margin-bottom" to come before "margin-left"                                                                    order/properties-order              
+ 306:28  ✖  Unexpected leading zero                                                                                                  number-leading-zero                 
+ 307:13  ✖  Expected "letter-spacing" to come before "word-spacing"                                                                  order/properties-order              
+ 307:29  ✖  Unexpected leading zero                                                                                                  number-leading-zero                 
+ 309:13  ✖  Expected selector ".overview .container .underline p" to come before selector ".header .row1 .red .logo p"               no-descending-specificity           
+ 309:13  ✖  Expected selector ".overview .container .underline p" to come before selector ".header .row1 .red .title p"              no-descending-specificity           
+ 309:13  ✖  Expected selector ".overview .container .underline p" to come before selector ".header .row1 .red .arrowtext p"          no-descending-specificity           
+ 317:13  ✖  Expected "grid-template-columns" to come before "grid-template-rows"                                                     order/properties-order              
+ 318:13  ✖  Expected "grid-row-gap" to come before "grid-template-columns"                                                           order/properties-order              
+ 319:13  ✖  Expected "grid-column-gap" to come before "grid-row-gap"                                                                 order/properties-order              
+ 325:17  ✖  Expected "font-size" to come before "font-weight"                                                                        order/properties-order              
+ 347:14  ✖  Unexpected missing end-of-source newline                                                                                 no-missing-end-of-source-newline    
+
+source/styles/components/header/desktop.scss
+ 6:25  ✖  Unexpected missing end-of-source newline   no-missing-end-of-source-newline
+
+source/styles/components/header/mobile.scss
+ 13:13  ✖  Expected "padding-top" to come before "padding-left"       order/properties-order
+ 19:17  ✖  Expected "margin-left" to come before "font-size"          order/properties-order
+ 25:17  ✖  Expected "margin-bottom" to come before "letter-spacing"   order/properties-order
+
+source/styles/components/header/tablet.scss
+ 16:17  ✖  Expected "grid-column-gap" to come before "grid-row-gap"   order/properties-order
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

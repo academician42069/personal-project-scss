@@ -1,0 +1,29 @@
+$color-1: #FE4646;
+$container-width: 690px;
+$red-width: 345px;
+
+.overview {
+    background: $color-5;
+
+    .container {
+        width: $container-width;
+        height: 470px;
+
+        .grid {
+            padding-left: 49px;
+
+            .various-text-grid {
+                grid-column-gap: 42px;
+                grid-row-gap: 40px;
+
+                .various-text.three {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .image-template {
+        display: none;
+    }
+}

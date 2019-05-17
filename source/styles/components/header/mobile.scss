@@ -1,3 +1,96 @@
+$color-1: #FE4646;
+$container-width: 270px;
+$red-width: $container-width;
+
 .header {
-    background: yellow;
+
+    .row1 {
+
+        .container {
+            width: $container-width;
+            height: 425px;
+
+            .red {
+                width: $red-width;
+                background-color: $color-1;
+
+                .logo {
+                    margin-bottom: 64px;
+                    padding-top: 12px;
+
+                    &::before {
+                        margin-left: -7px;
+                        padding: 1px 7.5px;
+                        font-size: 24px;
+                    }
+
+                    p {
+                        top: 30px;
+                        margin-left: 7px;
+                        font-size: 14px;
+                        letter-spacing: 0;
+                    }
+                }
+
+                .title {
+                    margin-top: 7px;
+                    padding-bottom: 14px;
+                    border-bottom-color: $color-7;
+
+                    div {
+                        margin-top: 0;
+                    }
+
+                    p {
+                        padding-right: 75px;
+                    }
+                }
+
+                .subtitle {
+                    padding-right: 10px;
+                    border-bottom-color: $color-7;
+                    font-size: 15px;
+                }
+
+                .arrowtext {
+
+                    p {
+                        margin-top: 2px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .icons {
+                width: 168px;
+
+                .linkgrid {
+                    width: 132px;
+                }
+            }
+
+            .menu {
+                position: absolute;
+                top: 14px;
+                right: 0;
+            }
+        }
+    }
+
+    .row2 {
+
+        .container {
+
+            &::before {
+                left: 0;
+            }
+
+            .arrows {
+
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
 }

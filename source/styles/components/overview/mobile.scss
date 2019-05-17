@@ -1,0 +1,55 @@
+$color-1: #FE4646;
+$container-width: 270px;
+$red-width: $container-width;
+
+.overview {
+    height: 600px;
+    background: $color-5;
+
+    .container {
+        width: $container-width;
+
+        .grid {
+            padding-top: 39px;
+            padding-left: 0;
+            text-align: center;
+
+            h3 {
+                margin-left: -2px;
+                padding-bottom: 25px;
+                font-size: 23px;
+            }
+
+            .underline {
+                margin-bottom: 23px;
+                font-size: 18px;
+                letter-spacing: 0;
+            }
+
+            .various-text-grid {
+                display: block;
+
+                .various-text {
+                    margin-bottom: 20px;
+
+                    &.one {
+                        margin-bottom: 14px;
+                    }
+
+                    &.two {
+                        margin-bottom: 19px;
+                    }
+
+                    &.three {
+                        padding-right: 0;
+                        padding-left: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    .image-template {
+        display: none;
+    }
+}
