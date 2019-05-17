@@ -1,12 +1,7 @@
 @import 'reset';
 @import 'media-queries';
 @import 'palette';
+@import 'base';
 @import 'components/header/index.scss';
 @import 'components/overview/index.scss';
 @import 'components/gallery/index.scss';
-
-body {
-    // width: 1400px; // DELETE ME LATER
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}

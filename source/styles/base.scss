@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.flex {
+    display: flex;
+    justify-items: flex-start;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+}

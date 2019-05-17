@@ -5,31 +5,12 @@ $row1-height: 422px;
 $row2-height: 62px;
 $container-width: 1000px;
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.flex {
-    display: flex;
-    justify-items: flex-start;
-}
-
-.container {
-    position: relative;
-    width: $container-width;
-    margin: 0 auto;
-}
-
 .overview {
     background: linear-gradient(to right, $color-4 0%, $color-4 50%, $color-4 50%, $color-5 50%, $color-5 100%);
 
     .container {
         display: flex;
+        width: $container-width;
         height: 520px;
         background-color: $color-5;
 
@@ -42,20 +23,25 @@ body {
         }
 
         .image-template {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: $red-width + px;
+            height: inherit;
+            overflow: hidden;
             background-color: $color-6;
         }
 
         h3 {
-            margin-left: 2px;
-            padding-bottom: 44px;
+            margin-bottom: 44px;
+            padding-left: 2px;
             font-size: 29px;
             font-weight: bold;
         }
 
         .underline {
             margin-bottom: 31px;
-            margin-left: 1px;
+            padding-left: 1px;
             font-family: 'Open Sans', sans-serif;
             font-size: 19px;
             font-weight: 300;

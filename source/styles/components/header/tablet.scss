@@ -1,4 +1,3 @@
-$color-1: #FE4646;
 $container-width: 690px;
 $red-width: 345px;
 
@@ -9,7 +8,7 @@ $red-width: 345px;
 
         .red {
             width: $red-width;
-            background-color: $color-1;
+            background-color: $color-10;
 
             .logo {
 
@@ -41,10 +40,10 @@ $red-width: 345px;
                 margin-left: 3px;
                 border-bottom-color: $color-7;
             }
-        }
 
-        .icons {
-            width: 312px;
+            .icons {
+                width: 312px;
+            }
         }
     }
 
